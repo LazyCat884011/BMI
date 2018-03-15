@@ -10,6 +10,10 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
+            double rate = 29.045;
+            Console.WriteLine("目前美金匯率是:" + rate);
+            Console.ReadLine();
+            
         }
     }
 }
