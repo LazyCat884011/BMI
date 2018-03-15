@@ -10,22 +10,15 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            Console.ForegroundColor = ConsoleColor.Blue;
-            Console.BackgroundColor = ConsoleColor.White;
-            Console.Write("╔═══════════╗\n");
-            Console.Write("║                      ║\n");
-            Console.Write("║     D    M    A      ║\n");
-            Console.Write("║                      ║\n");
-            Console.Write("╚═══════════╝\n");
-            //double rate = 29.045;
-            //Console.WriteLine("目前美金匯率是:" + rate);
-            //Console.Write("請輸入台幣金額:");
-            //double input = double.Parse(Console.ReadLine());
-            //double end = input * rate;
-            //Console.Write(input+"台幣="+end+"美金");
+            Console.Write("請輸入身高:");
+            double high = double.Parse(Console.ReadLine());
+            Console.Write("請輸入體重:");
+            double weight = double.Parse(Console.ReadLine());
+            double BMI = weight / ((high * 0.01)* (high * 0.01));
+            Console.Write("您的BMI值是:" + BMI);
             Console.ReadLine();
-            
-            
+
+
         }
     }
 }
